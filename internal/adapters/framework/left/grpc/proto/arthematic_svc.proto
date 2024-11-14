@@ -1,12 +1,13 @@
 syntax = "proto3";
 
 package pb;
+option go_package = "github.com/MdSadiqMd/GoHexCore/internal/adapters/framework/left/grpc/pb";
 
 import "number_msg.proto";
 
 service ArthematicService {
-    rpc GetAddition (OperationParameters) returns (Answer){};
-    rpc GetSubtraction (OperationParameters) returns (Answer){};
-    rpc GetMultiplication (OperationParameters) returns (Answer){};
-    rpc GetDivision (OperationParameters) returns (Answer){};
+    rpc GetAddition (OperationParameters) returns (Answer) {};
+    rpc GetSubtraction (OperationParameters) returns (Answer) {};
+    rpc GetMultiplication (OperationParameters) returns (Answer) {};
+    rpc GetDivision (OperationParameters) returns (Answer) {};
 }
